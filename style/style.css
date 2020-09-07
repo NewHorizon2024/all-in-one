@@ -1,0 +1,114 @@
+body, html {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    background-color: #F2F5F5;
+}
+
+header {
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    flex-direction: row-reverse;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    background-color: #201D1E;
+    position: fixed;
+    z-index:1;
+    overflow-x: hidden;
+}
+aside {
+    width: 20vw;
+    height: 90vh;
+    display: flex;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    flex-direction: column;
+    align-items: center;
+    -ms-flex-direction: column;
+    background-color: #201D1E;
+    position: fixed;
+    margin-top: 10vh;
+}
+#sock {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-color: #F2F5F5;
+    position: fixed;
+    margin-top: 9vh;
+    margin-left: 19vw;
+    box-shadow: 0px 0px 20px 5px #F2F5F5;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#brock {
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    background-color: transparent;
+    position: fixed;
+    margin-top: 9vh;
+    margin-left: 19vw;
+    box-shadow: 0px 0px 5px 5px #F2F5F5;
+    z-index: 1;
+}
+.fa-braille {
+    color: #201D1E;
+    cursor: pointer;
+}
+
+/*projects buttons*/
+#control-view-container {
+    width: 90%;
+    height: 90%;
+    border: 5px solid #343132;
+    margin-top: 45px;
+    border-radius: 10px;
+    display: flex;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+#view {
+    width: 80vw;
+    height: 90vh;
+    background-color: green;
+    position: fixed;
+    margin-left: 20vw;
+    margin-top: 10vh;
+    background-color: #F2F5F5;
+    z-index: 1;
+    display: flex;
+}
+#roof-container {
+    width: 80vw;
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    background-color: transparent;
+    margin-left: 20vw;
+    z-index:2;
+}
+
+.line {
+    width: 5px;
+    height: 10vh;
+    background-color: #F2F5F5;
+    box-shadow: 0px 0px 20px 5px #F2F5F5;
+}
+
+#news {
+    color: red;
+    display: flex;
+    width: auto;
+    height: 10vh;
+    align-items: center;
+    transition: 20s ease-in;
+}
