@@ -50,7 +50,9 @@ window.onload = function() {
 
 
 
-window.onclick =  function() {
-     import('./modules/binary.js')
-     .then(obj => obj());
+window.onclick =  async function() {
+    const {obj_1, obj_2} = await import('./modules/binary.js');
+    obj_1();
+    obj_2();
+    
 }
