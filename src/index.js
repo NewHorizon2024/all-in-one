@@ -1,6 +1,6 @@
 'use strict';
 
-import { rock } from './modules/binary.js';
+//import { rock } from './modules/binary.js';
 
 class Btn extends HTMLElement {
     constructor() {
@@ -51,5 +51,6 @@ window.onload = function() {
 
 
 window.onclick =  function() {
-     rock();
+     import('./modules/binary.js')
+     .then(obj => obj());
 }
