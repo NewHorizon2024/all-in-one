@@ -50,6 +50,6 @@ window.onload = function() {
 
 
 
-window.onclick = async function() {
+window.onclick =  function() {
      rock();
 }
