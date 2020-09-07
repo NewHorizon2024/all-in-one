@@ -27,7 +27,6 @@ class Btn extends HTMLElement {
             margin-top: 10px;
             cursor: pointer;
             transition: 0.5s ease-out;
-        
         }
         
         </style>
