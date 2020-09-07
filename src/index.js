@@ -51,8 +51,8 @@ window.onload = function() {
 
 
 window.onclick =  async function() {
-    const {obj_1, obj_2} = await import('./modules/binary.js');
-    obj_1();
-    obj_2();
+    const obj = await import('./modules/binary.js');
+    obj.rock();
+    obj.checker();
     
 }
