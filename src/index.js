@@ -39,15 +39,19 @@ class Btn extends HTMLElement {
         const appTitle = this.getAttribute('title');
         btnTitle.textContent = appTitle;
         btnTitle.onclick = function() {
+            let myApp = 'my-app';
             new Promise(resolve => {
                 if (view.children.length > 0) {
-
                     view.children[0].remove();
-                    customElements.remove('my-app');
+                    window.customElements.
                     return;
                 }
-                window.customElements.define('my-app', Binary);
-                
+                if (customElements.get('my-app')) {
+                    console.log("Done");
+                } else {
+                    window.customElements.define('my-app', Binary);
+                }
+
                 resolve(Binary);
             })
             .then(classObj => {
