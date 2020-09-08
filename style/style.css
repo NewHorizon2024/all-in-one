@@ -113,7 +113,7 @@ aside {
     margin: 5px;
 }
 .row:nth-child(1) {
-    background-image: linear-gradient(45deg, #C7C6C4, #E5E4E2, #E5E4E2, #C7C6C4);
+    background-image: linear-gradient(45deg,#C0C3BE, #C7C6C4, #E5E4E2, #E5E4E2, #C7C6C4, #C0C3BE);
     align-items: center;
     border-radius: 5px;
 }
@@ -175,7 +175,7 @@ aside {
     display: -webkit-flex;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(45deg, #C7C6C4, #E5E4E2, #E5E4E2, #C7C6C4);
+    background-image: linear-gradient(45deg, #C0C3BE, #C7C6C4, #E5E4E2, #E5E4E2, #C7C6C4, #C0C3BE);
     color: #2b2b2b;
     font-size: 20px;
 }
