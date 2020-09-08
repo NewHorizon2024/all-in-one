@@ -34,8 +34,30 @@ class Btn extends HTMLElement {
     }
 
     connectedCallback() {
+        const view = document.getElementById('view');
         const btnTitle = this.shadowRoot.getElementById('btn');
-        btnTitle.textContent = this.getAttribute('title');
+        const appTitle = this.getAttribute('title');
+        btnTitle.textContent = appTitle;
+
+        btnTitle.onclick = function() {
+            switch(appTitle) {
+                case 'Converting to Binary':
+                    import('./modules/binary')
+                    .then(obj => {
+                        const appRoot = new obj.Binary();
+                        window.customElements.define('my-app', appRoot);
+                        view.children[0].remove();
+                    })
+                    .then(() => {
+                        const app = document.createElement('my-app');
+                        view.append(app);
+                    })
+                    .catch(err => alert(err.message))
+            }
+        }
+
+    
+
     }
 }
 
