@@ -41,17 +41,6 @@ class Btn extends HTMLElement {
 
 window.customElements.define('apps-btn', Btn);
 
-window.onload = function() {
-    const bar = document.getElementById('news');
-    bar.style.marginRight = bar.parentElement.clientWidth + 'px';
-    
-}
 
 
 
-window.onclick =  async function() {
-    const obj = await import('./modules/binary.js');
-    obj.rock();
-    obj.checker();
-    
-}
