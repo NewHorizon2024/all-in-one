@@ -41,33 +41,9 @@ class Btn extends HTMLElement {
         const appTitle = this.getAttribute('title');
         btnTitle.textContent = appTitle;
 
-        btnTitle.onclick = function() {
-            /*
-            switch(appTitle) {
-                case 'Converting to Binary':
-                    import('./modules/binary.js')
-                    .then(obj => {
-                        //const appRoot = obj.Binary();
-                       // window.customElements.define('my-app', appRoot);
-                        //view.children[0].remove();
-                        alert(obj.Test())
-                    })
-                    .then(() => {
-                       // const app = document.createElement('my-app');
-                        //view.append(app);
-                    })
-                    .catch(err => alert(err.stack))
-                    break;
-                default: return;
-            }
-            */
-           import('./modules/binary.js')
-           .then(obj => alert(obj))
-        }
+    }
 
     
-
-    }
 }
 
 window.customElements.define('apps-btn', Btn);
