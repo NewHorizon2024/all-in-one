@@ -44,13 +44,14 @@ class Btn extends HTMLElement {
                 case 'Converting to Binary':
                     import('./modules/binary.js')
                     .then(obj => {
-                        const appRoot = obj.Binary();
-                        window.customElements.define('my-app', appRoot);
-                        view.children[0].remove();
+                        //const appRoot = obj.Binary();
+                       // window.customElements.define('my-app', appRoot);
+                        //view.children[0].remove();
+                        alert(obj)
                     })
                     .then(() => {
-                        const app = document.createElement('my-app');
-                        view.append(app);
+                       // const app = document.createElement('my-app');
+                        //view.append(app);
                     })
                     .catch(err => alert(err.stack))
                     break;
