@@ -42,6 +42,7 @@ class Btn extends HTMLElement {
         btnTitle.textContent = appTitle;
 
         btnTitle.onclick = function() {
+            /*
             switch(appTitle) {
                 case 'Converting to Binary':
                     import('./modules/binary.js')
@@ -59,6 +60,9 @@ class Btn extends HTMLElement {
                     break;
                 default: return;
             }
+            */
+           import('./modules/binary.js')
+           .then(obj => alert(obj))
         }
 
     
