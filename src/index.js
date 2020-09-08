@@ -42,7 +42,7 @@ class Btn extends HTMLElement {
         btnTitle.onclick = function() {
             switch(appTitle) {
                 case 'Converting to Binary':
-                    import('./modules/binary')
+                    import('./modules/binary.js')
                     .then(obj => {
                         const appRoot = new obj.Binary();
                         window.customElements.define('my-app', appRoot);
