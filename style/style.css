@@ -75,6 +75,8 @@ aside {
     align-items: center;
 
 }
+
+/*View wall */
 #view {
     width: 80vw;
     height: 90vh;
@@ -85,30 +87,8 @@ aside {
     background-color: #F2F5F5;
     z-index: 1;
     display: flex;
-}
-#roof-container {
-    width: 80vw;
-    height: 10vh;
-    display: flex;
-    justify-content: space-around;
-    position: fixed;
-    background-color: transparent;
-    margin-left: 20vw;
-    z-index:2;
+    justify-content: center;
 }
 
-.line {
-    width: 5px;
-    height: 10vh;
-    background-color: #F2F5F5;
-    box-shadow: 0px 0px 20px 5px #F2F5F5;
-}
 
-#news {
-    color: red;
-    display: flex;
-    width: auto;
-    height: 10vh;
-    align-items: center;
-    transition: 20s ease-in;
-}
+
