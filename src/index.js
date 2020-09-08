@@ -1,8 +1,5 @@
 'use strict';
-
-//const { Test } = require('./modules/binary.js');
-
-//import { rock } from './modules/binary.js';
+import { test } from './modules/binary.mjs';
 
 class Btn extends HTMLElement {
     constructor() {
@@ -41,8 +38,9 @@ class Btn extends HTMLElement {
         const appTitle = this.getAttribute('title');
         btnTitle.textContent = appTitle;
         btnTitle.onclick = function() {
-            import('./modules/binary.mjs')
-            .then(obj => alert(obj))
+            //import('./modules/binary.mjs')
+            //.then(obj => alert(obj))
+           test();
         }
 
     }
