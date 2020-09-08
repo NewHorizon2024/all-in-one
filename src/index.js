@@ -52,7 +52,7 @@ class Btn extends HTMLElement {
                         const app = document.createElement('my-app');
                         view.append(app);
                     })
-                    .catch(err => alert(err.message))
+                    .catch(err => alert(err.stack))
                     break;
                 default: return;
             }

@@ -133,4 +133,4 @@ export class Binary extends HTMLElement {
             </style>
         `;
     }
-};
+}
