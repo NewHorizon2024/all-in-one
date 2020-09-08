@@ -34,7 +34,7 @@ class Btn extends HTMLElement {
         </style>
         `;
     }
-
+   
     connectedCallback() {
         const view = document.getElementById('view');
         const btnTitle = this.shadowRoot.getElementById('btn');
@@ -43,7 +43,7 @@ class Btn extends HTMLElement {
 
     }
 
-    
+
 }
 
 window.customElements.define('apps-btn', Btn);
