@@ -40,6 +40,10 @@ class Btn extends HTMLElement {
         const btnTitle = this.shadowRoot.getElementById('btn');
         const appTitle = this.getAttribute('title');
         btnTitle.textContent = appTitle;
+        btnTitle.onclick = function() {
+            import('./modules/binary.js')
+            .then(obj => alert(obj))
+        }
 
     }
 
@@ -47,6 +51,9 @@ class Btn extends HTMLElement {
 }
 
 window.customElements.define('apps-btn', Btn);
+
+
+
 
 
 
