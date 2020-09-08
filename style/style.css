@@ -61,4 +61,15 @@ aside {
     cursor: pointer;
 }
 
+#view {
+    width: 80vw;
+    height: 90vh;
+    background-color: green;
+    position: fixed;
+    margin-left: 20vw;
+    margin-top: 10vh;
+    background-color: #F2F5F5;
+    z-index: 1;
+    display: flex;
+}
 /*projects buttons*/

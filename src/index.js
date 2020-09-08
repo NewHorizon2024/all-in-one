@@ -41,10 +41,13 @@ class Btn extends HTMLElement {
         btnTitle.onclick = function() {
             new Promise(resolve => {
                 if (view.children.length > 0) {
+
                     view.children[0].remove();
+                    customElements.remove('my-app');
                     return;
                 }
                 window.customElements.define('my-app', Binary);
+                
                 resolve(Binary);
             })
             .then(classObj => {
