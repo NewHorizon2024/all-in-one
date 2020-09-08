@@ -134,3 +134,9 @@ export class Binary extends HTMLElement {
         `;
     }
 }
+
+export class Test {
+    constructor(test) {
+        this._test = test;
+    }
+}

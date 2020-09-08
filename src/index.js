@@ -1,5 +1,7 @@
 'use strict';
 
+const { Test } = require('./modules/binary.js');
+
 //import { rock } from './modules/binary.js';
 
 class Btn extends HTMLElement {
@@ -47,7 +49,7 @@ class Btn extends HTMLElement {
                         //const appRoot = obj.Binary();
                        // window.customElements.define('my-app', appRoot);
                         //view.children[0].remove();
-                        alert(obj)
+                        alert(obj.Test())
                     })
                     .then(() => {
                        // const app = document.createElement('my-app');
