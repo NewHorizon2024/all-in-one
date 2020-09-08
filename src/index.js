@@ -44,7 +44,7 @@ class Btn extends HTMLElement {
                 case 'Converting to Binary':
                     import('./modules/binary.js')
                     .then(obj => {
-                        const appRoot = new obj.Binary();
+                        const appRoot = obj.Binary();
                         window.customElements.define('my-app', appRoot);
                         view.children[0].remove();
                     })
