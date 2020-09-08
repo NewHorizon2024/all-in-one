@@ -1,6 +1,6 @@
 'use strict';
 
-const { Test } = require('./modules/binary.js');
+//const { Test } = require('./modules/binary.js');
 
 //import { rock } from './modules/binary.js';
 
