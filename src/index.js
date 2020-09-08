@@ -42,6 +42,7 @@ class Btn extends HTMLElement {
             new Promise(resolve => {
                 if (view.children.length > 0) {
                     view.children[0].remove();
+                    return;
                 }
                 window.customElements.define('my-app', Binary);
                 resolve(Binary);
