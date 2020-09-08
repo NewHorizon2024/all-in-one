@@ -1,6 +1,6 @@
 'use strict';
 
-/*
+
 export class Binary extends HTMLElement {
     constructor() {
         super();
@@ -135,7 +135,4 @@ export class Binary extends HTMLElement {
         `;
     }
 }
-*/
-export function test() {
-    alert("D")
-}
+

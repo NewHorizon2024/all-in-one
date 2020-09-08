@@ -1,5 +1,6 @@
 'use strict';
-import { test } from './modules/binary.mjs';
+
+import { Binary } from './modules/binary.mjs';
 
 class Btn extends HTMLElement {
     constructor() {
@@ -38,9 +39,20 @@ class Btn extends HTMLElement {
         const appTitle = this.getAttribute('title');
         btnTitle.textContent = appTitle;
         btnTitle.onclick = function() {
-            //import('./modules/binary.mjs')
-            //.then(obj => alert(obj))
-           test();
+            new Promise(resolve => {
+                if (view.children.length > 0) {
+                    view.children[0].remove();
+                }
+                window.customElements.define('my-app', Binary);
+                resolve(Binary);
+            })
+            .then(classObj => {
+                const lam = document.createElement('my-app');
+                view.append(lam);
+                
+            })
+            .catch(err => alert(err.stack))
+            
         }
 
     }
