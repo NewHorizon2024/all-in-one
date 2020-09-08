@@ -53,6 +53,8 @@ class Btn extends HTMLElement {
                         view.append(app);
                     })
                     .catch(err => alert(err.message))
+                    break;
+                default: return;
             }
         }
 
