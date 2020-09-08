@@ -41,7 +41,7 @@ class Btn extends HTMLElement {
         const appTitle = this.getAttribute('title');
         btnTitle.textContent = appTitle;
         btnTitle.onclick = function() {
-            import('./modules/binary.js')
+            import('./modules/binary.mjs')
             .then(obj => alert(obj))
         }
 
