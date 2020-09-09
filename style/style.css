@@ -71,5 +71,6 @@ aside {
     background-color: #F2F5F5;
     z-index: 1;
     display: flex;
+    justify-content: center;
 }
 /*projects buttons*/
