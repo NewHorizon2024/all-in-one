@@ -136,11 +136,11 @@ export class Binary extends HTMLElement {
     }
 
     connectedCallback() {
-        const convertBtn = this.shadowRoot.getElementById('decimal-text').value;
+        const decimalText = this.shadowRoot.getElementById('decimal-text');
         const btnCovert = this.shadowRoot.getElementById('convert-btn');
 
         btnCovert.onclick = function() {
-            alert(convertBtn);
+            alert(decimalText.value);
         }
     }
 }
