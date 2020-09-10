@@ -43,7 +43,6 @@ class Btn extends HTMLElement {
             new Promise(resolve => {
                 if (view.children.length > 0) {
                     view.children[0].remove();
-                    window.customElements.
                     return;
                 }
                 if (customElements.get('my-app')) {
@@ -51,7 +50,6 @@ class Btn extends HTMLElement {
                 } else {
                     window.customElements.define('my-app', Binary);
                 }
-
                 resolve(Binary);
             })
             .then(classObj => {
