@@ -134,5 +134,14 @@ export class Binary extends HTMLElement {
             </style>
         `;
     }
+
+    connectedCallback() {
+        const convertBtn = this.shadowRoot.getElementById('convert-btn').value;
+        const btnCovert = this.shadowRoot.getElementById('convert-btn');
+
+        btnCovert.onclick = function() {
+            laert(convertBtn);
+        }
+    }
 }
 
