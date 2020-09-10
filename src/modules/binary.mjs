@@ -134,5 +134,11 @@ export class Binary extends HTMLElement {
             </style>
         `;
     }
+
+    connectedCallback() {
+        const convertBtn = this.shadowRoot.getElementById('decimal-text').value;
+        alert(convertBtn);
+
+    }
 }
 
