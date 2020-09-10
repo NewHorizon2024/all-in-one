@@ -138,6 +138,7 @@ export class Binary extends HTMLElement {
     connectedCallback() {
         const decimalText = this.shadowRoot.getElementById('decimal-text');
         const btnCovert = this.shadowRoot.getElementById('convert-btn');
+        const result = this.shadowRoot.getElementById('binary-text');
 
         btnCovert.onclick = function() {
             const decimal = Number(decimalText.value);
@@ -145,7 +146,21 @@ export class Binary extends HTMLElement {
                 return;
             }
             
-            alert(decimal);
+            let binaryString = '';
+
+            function baseHelper(decimal) {
+                if (decimal < 2) {
+                    binaryString += decimal;
+                    return;
+                } else {
+                    baseHelper(Math.floor(decimal /2));
+                    baseHelper(decimal % 2);
+                }
+            }
+            baseHelper(decimal);
+            result.textContent = binaryString;
+            
+            
         }
     }
 }
