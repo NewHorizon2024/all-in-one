@@ -141,7 +141,7 @@ export class Binary extends HTMLElement {
 
         btnCovert.onclick = function() {
             const decimal = Number(decimalText.value);
-            if (typeof decimal == NaN) {
+            if (isNaN(decimal)) {
                 return;
             }
             
