@@ -140,7 +140,7 @@ export class Binary extends HTMLElement {
         const btnCovert = this.shadowRoot.getElementById('convert-btn');
 
         btnCovert.onclick = function() {
-            alert(decimalText.value);
+            alert(typeof decimalText.value);
         }
     }
 }
