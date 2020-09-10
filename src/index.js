@@ -28,7 +28,6 @@ class Btn extends HTMLElement {
             cursor: pointer;
             transition: 0.5s ease-out;
         }
-        
         </style>
         `;
     }
@@ -55,7 +54,6 @@ class Btn extends HTMLElement {
             .then(classObj => {
                 const lam = document.createElement('my-app');
                 view.append(lam);
-                
             })
             .catch(err => alert(err.stack))
             
