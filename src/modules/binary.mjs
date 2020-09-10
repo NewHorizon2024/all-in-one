@@ -136,9 +136,12 @@ export class Binary extends HTMLElement {
     }
 
     connectedCallback() {
-        const convertBtn = this.shadowRoot.getElementById('decimal-text').value;
-        alert(convertBtn);
+        const convertBtn = this.shadowRoot.getElementById('convert-btn').value;
+        const btnCovert = this.shadowRoot.getElementById('convert-btn');
 
+        btnCovert.onclick = function() {
+            alert(convertBtn);
+        }
     }
 }
 
