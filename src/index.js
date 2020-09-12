@@ -152,6 +152,16 @@ window.customElements.define('apps-btn', Btn);
 const pointer = document.getElementsByClassName('fa-braille')[0];
 
 pointer.onclick = function() {
+
     const menu = document.getElementsByClassName('set')[0];
     menu.classList.toggle('open');
+}
+
+const rowRead = document.getElementsByClassName('set-row')[0];
+const rowFile = document.getElementsByClassName('set-row')[1];
+
+function openReadMe() {
+    const appView = document.getElementById('view');
+   const txt =  appView.children[0].readme;
+   alert(txt);
 }

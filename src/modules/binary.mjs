@@ -135,6 +135,10 @@ export class Binary extends HTMLElement {
         `;
 
         this.file = 'https://raw.githubusercontent.com/freelancer2020/all-in-one/master/src/modules/binary.mjs';
+        this.readme = `
+        This application to convert decimal nunmbers to binary numbers
+        Data Structure and Algorithm.
+        `
     }
 
     connectedCallback() {
