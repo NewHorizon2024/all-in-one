@@ -162,7 +162,7 @@ const rowFile = document.getElementsByClassName('set-row')[1];
 
 function openReadMe() {
     const appView = document.getElementById('view');
-   const txt =  appView.children[0].readme;
-   alert(txt);
+    const txt =  appView.children[0].readme;
+    alert(txt);
 }
 rowRead.addEventListener('click', openReadMe, false);

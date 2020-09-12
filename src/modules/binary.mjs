@@ -138,7 +138,7 @@ export class Binary extends HTMLElement {
         this.readme = `
         This application to convert decimal nunmbers to binary numbers
         Data Structure and Algorithm.
-        `
+        `;
     }
 
     connectedCallback() {
