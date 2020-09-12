@@ -162,6 +162,9 @@ const rowFile = document.getElementsByClassName('set-row')[1];
 
 function openReadMe() {
     const appView = document.getElementById('view');
+    if (!appView.children.length) {
+       alert("no apps to review")
+    }
     const txt =  appView.children[0].readme;
     alert(txt);
 }
