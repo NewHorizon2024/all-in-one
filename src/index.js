@@ -165,3 +165,4 @@ function openReadMe() {
    const txt =  appView.children[0].readme;
    alert(txt);
 }
+rowRead.addEventListener('click', openReadMe, false);
