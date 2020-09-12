@@ -148,3 +148,11 @@ window.customElements.define('apps-btn', Btn);
 */
 
 
+
+const pointer = document.getElementsByClassName('fa-braille')[0];
+pointer.onclick = function() {
+    alert("D")
+    const menu = document.getElementsByClassName('set')[0];
+    
+    menu.classList.toggle('open');
+}
