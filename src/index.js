@@ -161,11 +161,21 @@ const rowRead = document.getElementsByClassName('set-row')[0];
 const rowFile = document.getElementsByClassName('set-row')[1];
 
 function openReadMe() {
+    new Promise(resolve => {
     const appView = document.getElementById('view');
     if (!appView.children.length) {
-       alert("no apps to review")
+       alert("no apps to review");
     }
     const txt =  appView.children[0].readme;
-    alert(txt);
+    resolve(txt);
+    })
+    .then(objText => {
+        const appReader = document.getElementsByClassName('reader')[0];
+        const readerText = document.getElementById('reader-text');
+        appReader.style.marginRight = '0px';
+        readerText.textContent = objText;
+    })
+    
+   
 }
 rowRead.addEventListener('click', openReadMe, false);

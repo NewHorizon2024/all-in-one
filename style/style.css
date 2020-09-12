@@ -57,7 +57,7 @@ aside {
     box-shadow: 0px 0px 5px 5px #F2F5F5;
     z-index: 1;
 }
-.fa-braille, .fa-readme, .fa-file-download {
+.fa-braille, .fa-readme, .fa-file-download, .fa-arrow-circle-right {
     color: #2b2b2b;
     cursor: pointer;
     transition: 1s ease-out;
@@ -126,4 +126,41 @@ aside {
     justify-content: center;
     align-items: center;
   
+}
+
+.reader {
+    width: 19vw;
+    height: 49vh;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    border: 3px solid lightgray;
+    border-radius: 5px;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+    background-color: #F2F5F5;
+    z-index: 10;
+    box-shadow: 0px 0px 5px 5px lightgray;
+    transition: 1s ease-out;
+    margin-right: -25vw;
+
+}
+#reader-header{
+    width: 100%;
+    height: 40px;
+    display: flex;
+}
+#reader-arrow {
+    width: auto;
+    height: 100%;
+}
+#reader-text {
+    margin-top: 10px;
+    width: 90%;
+    height: auto;
+    overflow-y: auto;
+    font-family: 'Alata';
 }
