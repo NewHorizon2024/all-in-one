@@ -133,6 +133,8 @@ export class Binary extends HTMLElement {
             }
             </style>
         `;
+
+        this.file = 'https://raw.githubusercontent.com/freelancer2020/all-in-one/master/src/modules/binary.mjs';
     }
 
     connectedCallback() {
@@ -159,7 +161,6 @@ export class Binary extends HTMLElement {
             }
             baseHelper(decimal);
             result.textContent = binaryString;
-            
             
         }
     }

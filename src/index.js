@@ -57,10 +57,10 @@ class Btn extends HTMLElement {
                     .then(classObj => {
                         const lam = document.createElement('my-app');
                         view.append(lam);
+                        console.log(myApp.file);
                     })
                     .catch(err => alert(err.stack))
                 default: return;
-
 
             }
             
