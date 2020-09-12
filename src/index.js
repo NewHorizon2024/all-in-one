@@ -38,10 +38,10 @@ class Btn extends HTMLElement {
         const appTitle = this.getAttribute('title');
         btnTitle.textContent = appTitle;
         btnTitle.onclick = function() {
-            
+            let myApp = 'my-app';
             switch(appTitle) {
                 case 'Converting to Binary':
-                    let myApp = 'my-app';
+                    
                     new Promise(resolve => {
                         if (view.children.length > 0) {
                             view.children[0].remove();
