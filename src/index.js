@@ -159,7 +159,7 @@ pointer.onclick = function() {
 
 const rowRead = document.getElementsByClassName('set-row')[0];
 const rowFile = document.getElementsByClassName('set-row')[1];
-
+// open ap reader
 function openReadMe() {
     new Promise(resolve => {
     const appView = document.getElementById('view');
@@ -179,3 +179,10 @@ function openReadMe() {
    
 }
 rowRead.addEventListener('click', openReadMe, false);
+
+// hide app reader
+const readerArrow = document.getElementsByClassName('fa-arrow-circle-right')[0];
+readerArrow.onclick = function() {
+    const appReader = document.getElementsByClassName('reader')[0];
+    appReader.style.marginRight = '-25vw';   
+}
