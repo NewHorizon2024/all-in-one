@@ -145,3 +145,46 @@ permuteArray(arr);  //output .. // ['A', 'C', 'D']
                              //    ['C', 'D', 'A']
                             //     ['D', 'C', 'A']
                            //      ['D', 'A', 'C']
+                
+/************************************************************************ */
+/*
+Flatten an object
+Time Comlexity: O(n)
+Space Comlexity O(n)
+*/
+
+const dictionary = {
+  'key1': '1',
+  'key2': {
+    'a': '2',
+    'b': '3',
+    'c': {
+      'd': '3',
+      'e': '1'
+    }
+  }
+}
+
+function flattendictionary(dictionary) {
+  let flattened = {};
+
+  function flattenDicHelper(dictionary, propName) {
+    if (typeof dictionary != 'object') {
+      flattened[propName] = dictionary;
+      return;
+    }
+
+    for (let prop in dictionary) {
+      if (propName == '') {
+        flattenDicHelper(dictionary[prop], propName+prop);
+      } else {
+        flattenDicHelper(dictionary[prop], propName+'.'+prop);
+      }
+    }
+
+  }
+
+  flattenDicHelper(dictionary, '');
+  return flattened;
+
+}
