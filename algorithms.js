@@ -110,3 +110,38 @@ function arraySlice(arr, beginIndex, endIndex) {
    base10Helper(n);
    return binaryString;
  }
+
+ /************************************************************************************** */
+/*
+Permutations of an array ( this is a clasical recursion problem )
+swaping elements of an array in every possible position.
+Time Complexity: O(n!)
+Space Comlexity: O(n!)
+*/
+const arr = ['A', 'C', 'D'];
+
+function swap(array, index1, index2) {
+  let temp = array[index1];
+  array[index1] = array[index2];
+  array[index2] = temp;
+}
+
+function permutation(array, begin, end) {
+  if (begin == end) return array;
+  for (let i = begin; i < end + 1; i++) {
+    swap(array, begin, i);
+    permutation(array, begin + 1, end);
+    swap(array, begin, i);
+  }
+}
+
+function permuteArray(array) {
+  permutation(array, 0, array.length -1);
+}
+
+permuteArray(arr);  //output .. // ['A', 'C', 'D']
+                               //  ['A', 'D', 'C']
+                              //   ['C', 'A', 'D']
+                             //    ['C', 'D', 'A']
+                            //     ['D', 'C', 'A']
+                           //      ['D', 'A', 'C']
