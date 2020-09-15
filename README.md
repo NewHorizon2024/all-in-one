@@ -1,1 +1,1 @@
-*All my algorithms and data structure
+algorithms and data structure
