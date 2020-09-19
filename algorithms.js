@@ -196,7 +196,7 @@ Time Comlexity: O(n2)
 Space Complexity: O(1)
 */
 
-const numbers = [6, 4, 10, 3, 20, 2, 17, 1, 33];
+const numbers = [6, 1, 2, 4, 10, 5];
 
 function swap(array, index1, index2) {
   let temp = array[index1];
@@ -214,3 +214,5 @@ function bubbleSort(array) {
   }
   return array;
 }
+
+bubbleSort(numbers); // output [1, 2, 4, 5, 6, 10]
